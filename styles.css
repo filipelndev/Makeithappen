@@ -8,7 +8,7 @@
 
 /* Ajuste global para evitar que o conteúdo fique sob a navbar */
 body {
-    background-color: rgba(0, 0, 0, 0);
+    background-color: black;
     color: white;
 }
 
