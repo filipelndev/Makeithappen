@@ -166,3 +166,117 @@ main > img {
     transform: scale(1.05);
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
 }
+/* ======= GALERIA ======= */
+.galeria {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.galeria h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #ff6600;
+}
+
+.carrossel {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    overflow: hidden;
+    position: relative;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+}
+
+.carrossel img {
+    width: 100%;
+    display: none;
+    border-radius: 10px;
+}
+
+.carrossel img:first-child {
+    display: block; /* Exibir a primeira imagem inicialmente */
+}
+
+/* ======= SOBRE ======= */
+.sobre {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+.sobre h1 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    color: #ff6600;
+}
+
+.sobre p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+/* Formulário de Contato */
+#contato-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background: #111;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+}
+
+#contato-form label {
+    font-size: 1rem;
+    text-align: left;
+    color: #ff6600;
+}
+
+#contato-form input,
+#contato-form textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    border: 1px solid #ff6600;
+    border-radius: 5px;
+    background: #222;
+    color: white;
+}
+
+#contato-form button {
+    background: #ff6600;
+    border: none;
+    padding: 10px;
+    font-size: 1.2rem;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+#contato-form button:hover {
+    background: #cc5500;
+    transform: scale(1.05);
+}
+
+/* ======= RESPONSIVIDADE ======= */
+@media (max-width: 768px) {
+    .galeria h1, .sobre h1 {
+        font-size: 2rem;
+    }
+
+    .sobre p {
+        font-size: 1rem;
+    }
+
+    .carrossel {
+        width: 95%;
+    }
+
+    #contato-form {
+        padding: 15px;
+    }
+}
