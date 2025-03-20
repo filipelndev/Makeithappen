@@ -6,10 +6,33 @@
     font-family: Arial, sans-serif;
 }
 
+/* Ajuste global para evitar que o conteúdo fique sob a navbar */
 body {
-    background-color: #000;
-    color: #fff;
+    padding-top: 80px; /* Mesmo tamanho da navbar */
 }
+
+/* Navbar fixa no topo */
+nav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: #000;
+    padding: 15px 0;
+    z-index: 1000;
+    box-shadow: 0 2px 10px rgba(255, 102, 0, 0.5);
+}
+
+/* Ajuste para todas as seções ficarem abaixo da navbar */
+main {
+    margin-top: 80px;
+}
+
+/* Caso alguma seção específica precise de mais espaçamento */
+.galeria, .sobre {
+    margin-top: 100px;
+}
+
 
 /* Barra de navegação */
 header {
