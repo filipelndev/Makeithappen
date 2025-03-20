@@ -26,9 +26,6 @@ nav {
 }
 
 /* Ajuste para todas as seções ficarem abaixo da navbar */
-main {
-    margin-top: 80px;
-}
 
 /* Caso alguma seção específica precise de mais espaçamento */
 .galeria, .sobre {
@@ -39,7 +36,6 @@ main {
 /* Barra de navegação */
 header {
     background-color: rgba(0, 0, 0, 0.9);
-    padding: 20px;
     position: fixed;
     width: 100%;
     top: 0;
