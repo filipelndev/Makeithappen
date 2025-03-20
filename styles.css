@@ -49,14 +49,16 @@ header {
     z-index: 1000;
 }
 
+/* Ajuste para centralizar a logo */
 .logo {
     display: flex;
+    justify-content: center;
     align-items: center;
+    flex-grow: 1; /* Faz a logo ocupar o espaço central */
 }
 
 .logo img {
-    align-items: center;
-    height: 100px; /* Ajuste conforme o tamanho ideal */
+    height: 100px; /* Ajuste o tamanho conforme necessário */
     width: auto;
 }
 
