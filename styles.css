@@ -55,7 +55,8 @@ header {
 }
 
 .logo img {
-    height: 60px; /* Ajuste conforme o tamanho ideal */
+    align-items: center;
+    height: 100px; /* Ajuste conforme o tamanho ideal */
     width: auto;
 }
 
