@@ -8,9 +8,8 @@
 
 /* Ajuste global para evitar que o conteúdo fique sob a navbar */
 body {
-    padding-top: 80px; /* Mesmo tamanho da navbar */
     background-color: rgba(0, 0, 0, 0);
-    color: white;
+    color: black;
 }
 
 /* Navbar fixa no topo */
