@@ -141,6 +141,10 @@ main > img {
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.5); /* Efeito de brilho suave */
 }
 
+main {
+    margin-top: 80px;
+}
+
 /* Ajuste para a seção "hero" (texto principal) */
 .hero {
     text-align: center;
