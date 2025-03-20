@@ -49,11 +49,15 @@ header {
 }
 
 .logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #ff6600;
-    margin-left: 20px;
+    display: flex;
+    align-items: center;
 }
+
+.logo img {
+    height: 60px; /* Ajuste conforme o tamanho ideal */
+    width: auto;
+}
+
 
 .nav-links {
     list-style: none;
