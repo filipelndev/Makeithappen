@@ -54,3 +54,13 @@ function abrirImagem(img) {
 function fecharImagem() {
     document.getElementById("modal").style.display = "none";
 }
+function abrirModal(img, titulo, descricao) {
+    document.getElementById("modal").style.display = "flex";
+    document.getElementById("modal-img").src = img.src;
+    document.getElementById("modal-titulo").innerText = titulo;
+    document.getElementById("modal-texto").innerText = descricao;
+}
+
+function fecharModal() {
+    document.getElementById("modal").style.display = "none";
+}
