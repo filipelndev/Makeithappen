@@ -201,6 +201,7 @@ main > img {
 }
 
 .galeria img {
+    margin-top: 30px;
     width: 240px;  /* Define um tamanho fixo menor */
     height: 160px;
     object-fit: cover; /* Mantém a proporção sem distorcer */
