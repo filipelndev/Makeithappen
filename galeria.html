@@ -20,23 +20,24 @@
         </nav>
     </header>
 
-    <main class="galeria">
-        <h1>Galeria de Eventos</h1>
-        <div class="carrossel">
-            <img src="IMG-20250319-WA0053.jpg" alt="Evento 1">
-            <img src="IMG-20250319-WA0052.jpg" alt="Evento 2">
-            <img src="IMG-20250319-WA0051.jpg" alt="Evento 3">
-            <img src="IMG-20250319-WA0046.jpg" alt="Evento 4">
-            <img src="IMG-20250319-WA0044.jpg" alt="Evento 5">
-            <img src="IMG-20250319-WA0036.jpg" alt="Evento 6">
-            <img src="IMG-20250319-WA0034.jpg" alt="Evento 7">
-            <img src="IMG-20250319-WA0029.jpg" alt="Evento 8">
-            <img src="IMG-20250319-WA0026.jpg" alt="Evento 9">
-            <img src="IMG-20250319-WA0021.jpg" alt="Evento 10">
-            <img src="IMG-20250319-WA0024.jpg" alt="Evento 11">
-            <img src="IMG-20250319-WA0019.jpg" alt="Evento 12">
-        </div>
-    </main>
+    <main>
+    <h1>Galeria de Fotos</h1>
+    <div class="galeria">
+        <img src="IMG-20250319-WA0053.jpg" alt="Foto 1" onclick="abrirImagem(this)">
+        <img src="IMG-20250319-WA0052.jpg" alt="Foto 2" onclick="abrirImagem(this)">
+        <img src="IMG-20250319-WA0051.jpg" alt="Foto 3" onclick="abrirImagem(this)">
+        <img src="IMG-20250319-WA0046.jpg" alt="Foto 4" onclick="abrirImagem(this)">
+        <img src="IMG-20250319-WA0044.jpg" alt="Foto 5" onclick="abrirImagem(this)">
+        <!-- Adicione mais imagens conforme necessário -->
+    </div>
+
+    <!-- Modal para exibir imagem ampliada -->
+    <div id="modal" class="modal" onclick="fecharImagem()">
+        <span class="fechar">&times;</span>
+        <img class="modal-conteudo" id="imgAmpliada">
+    </div>
+</main>
+
 
     <footer>
         <p>© 2025 Make It Happen Cabine Fotográfica - <a href="https://www.instagram.com/mihcabine" target="_blank">@mihcabine</a></p>
