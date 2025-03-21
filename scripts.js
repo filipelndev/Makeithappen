@@ -46,3 +46,11 @@ function trocarImagem() {
 if (imagens.length > 0) {
     setInterval(trocarImagem, 3000); // Troca a cada 3 segundos
 }
+function abrirImagem(img) {
+    document.getElementById("modal").style.display = "block";
+    document.getElementById("imgAmpliada").src = img.src;
+}
+
+function fecharImagem() {
+    document.getElementById("modal").style.display = "none";
+}
