@@ -105,7 +105,7 @@ header {
 
 /* Seção de serviços */
 .servicos {
-    padding: 10px;
+    padding: 2px;
     text-align: center;
 }
 
@@ -124,7 +124,7 @@ header {
 
 .servico {
     background: #111;
-    padding: 20px;
+    padding: 10px;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -171,13 +171,13 @@ main > img {
 }
 
 main {
-    margin-top: 10px;
+    margin-top: 5px;
 }
 
 /* Ajuste para a seção "hero" (texto principal) */
 .hero {
     text-align: center;
-    padding: 10px;
+    padding: 5px;
 }
 
 /* Ajuste para a seção de serviços */
