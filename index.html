@@ -25,22 +25,21 @@
             <h1>Registre momentos inesquecíveis</h1>
             <p>Fotos impressas e vídeos interativos para sua festa</p>
         </section>
-        
         <section class="servicos">
-            <h2>Nossos Serviços</h2>
-            <div class="servicos-container">
-                <div class="servico">
-                    <img src="IMG-20250319-WA0053.jpg" alt="Cabine Fotográfica">
-                    <p>Cabine Fotográfica</p>
-                </div>
-                <div class="servico">
-                    <img src="IMG-20250319-WA0036.jpg" alt="Espelho Mágico">
-                    <p>Cabine Espelhada</p>
-                </div>
-                <div class="servico">
-                    <img src="IMG-20250319-WA0021.jpg" alt="Totem Retrô">
-                    <p>Totem Retrô</p>
-                </div>
+    <h2>Nossos Serviços</h2>
+    <div class="servicos-container">
+        <div class="servico">
+            <img src="IMG-20250319-WA0053.jpg" alt="Cabine Fotográfica" onclick="abrirModal(this, 'Cabine Fotográfica', 'Fotos instantâneas para sua festa!')">
+            <p>Cabine Fotográfica</p>
+        </div>
+        <div class="servico">
+            <img src="IMG-20250319-WA0036.jpg" alt="Espelho Mágico" onclick="abrirModal(this, 'Espelho Mágico', 'Uma experiência interativa e divertida!')">
+            <p>Espelho Mágico</p>
+        </div>
+        <div class="servico">
+            <img src="IMG-20250319-WA0021.jpg" alt="Totem Retrô" onclick="abrirModal(this, 'Totem Retrô', 'Design vintage com tecnologia moderna!')">
+            <p>Totem Retrô</p>
+        </div>
                <div class="servico">
                     <img src="IMG-20250319-WA0006.jpg" alt="Cabine Capa de Revista">
                     <p>Cabine Capa de Revista</p>
@@ -59,6 +58,15 @@
                 </div>
             </div>
         </section>
+        <!-- Modal -->
+<div id="modal" class="modal">
+    <div class="modal-content">
+        <span class="fechar" onclick="fecharModal()">&times;</span>
+        <img id="modal-img" src="" alt="">
+        <h2 id="modal-titulo"></h2>
+        <p id="modal-texto"></p>
+    </div>
+</div>
     </main>
 
     <footer>
