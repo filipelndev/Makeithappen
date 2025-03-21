@@ -83,8 +83,8 @@ header {
 /* Hero Section */
 .hero {
     height: 100vh;
-    padding: 30px 20px; /* Reduzindo o espaçamento interno */
-    margin: 20px auto;
+    padding: 10px 5px; /* Reduzindo o espaçamento interno */
+    margin: 10px auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
