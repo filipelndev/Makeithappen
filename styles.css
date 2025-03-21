@@ -209,8 +209,8 @@ main {
 }
 
 .galeria img {
-    width: 120px;  /* Define um tamanho fixo menor */
-    height: 80px;
+    width: 240px;  /* Define um tamanho fixo menor */
+    height: 160px;
     object-fit: cover; /* Mantém a proporção sem distorcer */
     cursor: pointer;
     border-radius: 5px;
