@@ -55,12 +55,13 @@ function fecharImagem() {
     document.getElementById("modal").style.display = "none";
 }
 function abrirModal(img, titulo, descricao) {
-    document.getElementById("modal").style.display = "flex";
+    let modal = document.getElementById("modal");
     document.getElementById("modal-img").src = img.src;
     document.getElementById("modal-titulo").innerText = titulo;
     document.getElementById("modal-texto").innerText = descricao;
+    modal.showModal(); // Abre o modal nativo
 }
 
 function fecharModal() {
-    document.getElementById("modal").style.display = "none";
+    document.getElementById("modal").close(); // Fecha o modal
 }
