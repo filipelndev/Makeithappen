@@ -202,7 +202,6 @@ main {
 }
 /* ======= GALERIA ======= */
 .galeria {
-.galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
@@ -211,17 +210,19 @@ main {
 }
 
 .galeria img {
-    width: 150px;
-    height: 100px;
-    object-fit: cover;
+    width: 120px;  /* Define um tamanho fixo menor */
+    height: 80px;
+    object-fit: cover; /* Mantém a proporção sem distorcer */
     cursor: pointer;
     border-radius: 5px;
-    transition: transform 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .galeria img:hover {
     transform: scale(1.1);
+    box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
+
 
 /* Estilo do modal */
 .modal {
