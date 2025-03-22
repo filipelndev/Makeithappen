@@ -11,7 +11,7 @@ body {
     background-color: black;
     color: white;
 }
-
+ 
 /* Navbar fixa no topo */
 nav {
     position: fixed;
@@ -54,7 +54,7 @@ header {
 }
 
 .logo img {
-    height: 100px; /* Ajuste o tamanho conforme necessário */
+    height: 150px; /* Ajuste o tamanho conforme necessário */
     width: auto;
 }
 
@@ -82,53 +82,85 @@ header {
 
 /* Hero Section */
 .hero {
-    height: 100vh;
-    display: flex;
+    display: flex
+;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
+    justify-content: normal;
     text-align: center;
-    background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url('img/background.jpg') center/cover;
-    margin: 0; /* Remove qualquer margem extra */
-    max-width: 800px;
+    margin-top: 60px;
+    height: 15vh;
 }
 
 .hero h1 {
     font-size: 3rem;
+    margin: 0; /* Remove margens extras */
+    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
 }
 
 .hero p {
     font-size: 1.5rem;
     color: #ff6600;
+    margin: 0; /* Remove margens extras */
+    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
 }
 
 /* Seção de serviços */
+
+
 .servicos {
     text-align: center;
+    margin-top: 0; /* Remove espaçamento extra entre as sections */
+    padding-top: 20px; /* Pequeno espaço para separação */
+    min-width: 250px;
+    position: relative;
 }
 
 .servicos h2 {
     font-size: 2rem;
     margin-bottom: 2px;
-    color: #ff6600;
+    color: white;
 }
 
 .servicos-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    overflow-x: auto;
     gap: 20px;
+    padding: 20px;
 }
+
 
 .servico {
     background: #111;
     border-radius: 10px;
     transition: transform 0.3s, box-shadow 0.3s;
+    margin-top: 15px;
 }
 
 .servico img {
-    width: 200px;
-    border-radius: 10px;
+    width: 100%;
+    border-radius: 8px;
+    transition: transform 0.3s ease;
+}
+
+.servico img:hover {
+    transform: scale(1.05);
+}
+
+.btn-saber-mais {
+    display: inline-block;
+    padding: 10px 20px;
+    margin-top: 10px;
+    background-color: #FF7F32; /* Laranja */
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-saber-mais:hover {
+    background-color: #D86D2A;
 }
 
 .servico p {
@@ -164,11 +196,6 @@ main > img {
     margin: 20px auto; /* Centraliza e dá espaçamento */
     border-radius: 10px; /* Borda arredondada para um efeito moderno */
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.5); /* Efeito de brilho suave */
-}
-
-/* Ajuste para a seção "hero" (texto principal) */
-.hero {
-    text-align: center;
 }
 
 /* Ajuste para a seção de serviços */
@@ -217,7 +244,7 @@ main > img {
 
 /* Estilo do modal */
 .modal {
-    display: none;
+    display: none; /* Oculto por padrão */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -225,24 +252,36 @@ main > img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.modal-conteudo {
-    margin-top: 5%;
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
     max-width: 90%;
-    max-height: 80vh;
+    width: 400px;
+    text-align: center;
+    position: relative;
+}
+
+.modal-content img {
+    width: 100%;
+    max-height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
 }
 
 .fechar {
     position: absolute;
-    top: 20px;
-    right: 30px;
-    color: white;
-    font-size: 30px;
+    top: 10px;
+    right: 15px;
+    font-size: 25px;
     cursor: pointer;
+    color: black;
 }
-
 
 /* ======= SOBRE ======= */
 .sobre {
@@ -360,4 +399,110 @@ dialog::backdrop {
     font-size: 25px;
     cursor: pointer;
     color: #000;
+}
+
+/* Removendo o sublinhado e a cor padrão dos links */
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Se quiser que pareça um botão */
+a.servico-link {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #ff6600; /* Cor laranja do site */
+    color: white;
+    border-radius: 5px;
+    transition: background 0.3s ease;
+}
+
+a.servico-link:hover {
+    background-color: #e65c00; /* Um laranja mais escuro no hover */
+    cursor: pointer;
+}
+
+/* Estilos para a seção de serviços */
+section {
+    text-align: center;
+    margin: 40px 0;
+}
+
+/* Estilo para as imagens dos serviços */
+.servico-imagens {
+    display: flex;
+    justify-content: center;
+    gap: 20px; /* Espaçamento entre as imagens */
+    margin-bottom: 20px;
+}
+
+.servico-imagens img {
+    max-width: 15%; /* Limita a largura das imagens */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um visual mais interessante */
+}
+
+/* Estilo para os títulos */
+section h2 {
+    font-size: 2em;
+    color: #e65c00; /* Cor do título */
+    margin-bottom: 10px;
+}
+
+/* Estilo para as descrições dos serviços */
+section p {
+    font-size: 1.1em;
+    color: white;
+    max-width: 800px;
+    margin: 0 auto;
+    line-height: 1.5;
+    padding: 0 20px;
+}
+
+/* Estilos para a seção de adicionais */
+#adicionais {
+    padding: 40px 20px;
+    text-align: center;
+}
+
+#adicionais h2 {
+    font-size: 2.5em;
+    color: #FF6600; /* Cor chamativa para o título */
+    margin-bottom: 20px;
+}
+
+.adicionais-container {
+    display: flex;
+    justify-content: center;
+    gap: 40px; /* Espaçamento entre os itens */
+    flex-wrap: wrap; /* Para que os itens se ajustem em telas menores */
+}
+
+.adicional {
+    padding: 20px;
+    width: 300px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    text-align: center;
+}
+
+.adicional img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    max-height: 200px;
+    object-fit: cover; /* Para as imagens se ajustarem corretamente */
+    margin-bottom: 15px;
+}
+
+.adicional h3 {
+    font-size: 1.8em;
+    color: #FF6600;
+    margin-bottom: 10px;
+}
+
+.adicional p {
+    font-size: 1.1em;
+    color: white;
+    line-height: 1.5;
 }

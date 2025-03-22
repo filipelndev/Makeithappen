@@ -9,70 +9,177 @@
 <body>
     <header>
         <nav>
-            <div class="logo">
-    <img class="logotipp" src="IMG-20250320-WA0000.jpg" alt="Make It Happen Logo">
-</div>
             <ul class="nav-links">
                 <li><a href="index.html">Início</a></li>
                 <li><a href="galeria.html">Galeria</a></li>
                 <li><a href="sobre.html">Sobre</a></li>
             </ul>
         </nav>
-    </header>
-
+    </header>    
     <main>
         <section class="hero">
             <h1>Registre momentos inesquecíveis</h1>
             <p>Fotos impressas e vídeos interativos para sua festa</p>
         </section>
+        <div class="logo">
+            <a href="https://www.instagram.com/mihcabine" target="_blank"><img class="logotipo" src="IMG-20250320-WA0000.jpg" alt="Make It Happen Logo"></a>
+        </div>
         <section class="servicos">
-    <h2>Nossos Serviços</h2>
-    <div class="servicos-container">
-        <div class="servico">
-            <img src="IMG-20250319-WA0053.jpg" alt="Cabine Fotográfica" onclick="abrirModal(this, 'Cabine Fotográfica', 'Fotos instantâneas para sua festa!')">
-            <p>Cabine Fotográfica</p>
-        </div>
-        <div class="servico">
-            <img src="IMG-20250319-WA0036.jpg" alt="Espelho Mágico" onclick="abrirModal(this, 'Espelho Mágico', 'Uma experiência interativa e divertida!')">
-            <p>Espelho Mágico</p>
-        </div>
-        <div class="servico">
-            <img src="IMG-20250319-WA0021.jpg" alt="Totem Retrô" onclick="abrirModal(this, 'Totem Retrô', 'Reviva a nostalgia com nosso Totem Retrô! Capture momentos especiais e leve para casa fotos impressas instantaneamente. Uma experiência divertida que transforma qualquer evento em uma lembrança inesquecível!')">
-            <p>Totem Retrô</p>
-        </div>
-               <div class="servico">
-                    <img src="IMG-20250319-WA0006.jpg" alt="Cabine Capa de Revista">
-                    <p>Cabine Capa de Revista</p>
-                </div> 
+            <h2>Nossos Serviços</h2>
+            <div class="servicos-container">
                 <div class="servico">
-                <img src="IMG-20250319-WA0017.jpg" alt="Torre Seta de LED">
-                    <p>Torre Seta de LED</p>
+                    <a href="#cabine-fotografica">
+                        <img src="IMG-20250319-WA0053.jpg" alt="Cabine Fotográfica">
+                        <p>Cabine Fotográfica</p>
+                    </a>
+                    <a href="#cabine-fotografica" class="btn-saber-mais">Saiba Mais</a>
                 </div>
                 <div class="servico">
-                    <img src="IMG-20250319-WA0029.jpg" alt="Plataforma 360°">
-                    <p>Plataforma 360°</p>
+                    <a href="#espelhos-magicos">
+                        <img src="IMG-20250319-WA0036.jpg" alt="Espelho Mágico">
+                        <p>Cabine Espelhada</p>
+                    </a>
+                    <a href="#espelhos-magicos" class="btn-saber-mais">Saiba Mais</a>
                 </div>
                 <div class="servico">
-                    <img src="IMG-20250319-WA0046.jpg" alt="Tunel Infinito">
-                    <p>Tunel Infinito</p>
+                    <a href="#totem-retro">
+                        <img src="IMG-20250319-WA0021.jpg" alt="Totem Retrô">
+                        <p>Totem Retrô</p>
+                    </a>
+                    <a href="#totem-retro" class="btn-saber-mais">Saiba Mais</a>
+                </div>
+                <div class="servico">
+                    <a href="#plataforma-360">
+                        <img src="IMG-20250319-WA0029.jpg" alt="Plataforma 360°">
+                        <p>Plataforma 360°</p>
+                    </a>
+                    <a href="#plataforma-360" class="btn-saber-mais">Saiba Mais</a>
+                </div>
+                <div class="servico">
+                    <a href="#cabine-capa-de-revista">
+                        <img src="IMG-20250319-WA0006.jpg" alt="Cabine Capa de Revista">
+                        <p>Cabine Capa de Revista</p>
+                    </a>
+                    <a href="#cabine-capa-de-revista" class="btn-saber-mais">Saiba Mais</a>
+                </div>
+                <div class="servico">
+                    <a href="#torre-seta-de-led">
+                        <img src="IMG-20250319-WA0017.jpg" alt="Torre Seta de LED">
+                        <p>Torre Seta de LED</p>
+                    </a>
+                    <a href="#torre-seta-de-led" class="btn-saber-mais">Saiba Mais</a>
+                </div>
+                <div class="servico">
+                    <a href="#tunel-infinito">
+                        <img src="IMG-20250319-WA0046.jpg" alt="Tunel Infinito">
+                        <p>Tunel Infinito</p>
+                    </a>
+                    <a href="#tunel-infinito" class="btn-saber-mais">Saiba Mais</a>
+                </div>
+                <div class="servico">
+                    <a href="#adicionais">
+                        <img src="IMG-20250319-WA0029.jpg" alt="adicionais">
+                        <p>Adicionais</p>
+                    </a>
+                    <a href="#adicionais" class="btn-saber-mais">Saiba Mais</a>
                 </div>
             </div>
         </section>
-        <!-- Modal -->
-<div id="modal" class="modal">
-    <div class="modal-content">
-        <span class="fechar" onclick="fecharModal()">&times;</span>
-        <img id="modal-img" src="" alt="">
-        <h2 id="modal-titulo"></h2>
-        <p id="modal-texto"></p>
+
+        <section id="cabine-fotografica">
+            <h2>Cabine Fotográfica</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0053.jpg" alt="Cabine Fotográfica 1">
+                <img src="IMG-20250319-WA0052.jpg" alt="Cabine Fotográfica 2">
+            </div>
+            <p>Crie memórias, eternize momentos! A cabine fotográfica é sucesso garantido, um presente para si a para os seus convidados. Cada foto revelada é uma história.  Torne o seu momento ainda mais especial!</p>
+        </section>
+        
+        <section id="espelhos-magicos">
+            <h2>Cabine Espelhada</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0036.jpg" alt="Espelho Mágico 1">
+                <img src="IMG-20250319-WA0034.jpg" alt="Espelho Mágico 2">
+            </div>
+            <p>Seja o reflexo da diversão! Nossa cabine espelhada é uma experiência única e mágica que vai transformar sua festa em um evento inesquecível.
+                O ponto alto da sua festa, fotos incríveis e com efeitos especiais farão este momento se tornar ainda mais especial.</p>
+        </section>
+        
+        <section id="totem-retro">
+            <h2>Totem Retrô</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0019.jpg" alt="Totem Retrô 1">
+                <img src="IMG-20250319-WA0021.jpg" alt="Totem Retrô 2">
+            </div>
+            <p>Reviva a nostalgia com nosso Totem Retrô!
+                Capture momentos especiais e leve para casa fotos impressas instantaneamente. Uma experiência divertida que transforma qualquer evento em uma lembrança inesquecível!</p>
+        </section>
+        
+        <section id="plataforma-360">
+            <h2>Plataforma 360°</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0024.jpg" alt="Plataforma 360° 1">
+                <img src="IMG-20250319-WA0026.jpg" alt="Plataforma 360° 2">
+            </div>
+            <p>360 graus de emoção! Uma experiência totalmente imersiva e envolvente. Vídeos divertidos para proporcionar a melhor interatividade para os participantes.
+                Gire, compartilhe, lembre!</p>
+        </section>
+        
+        <section id="cabine-capa-de-revista">
+            <h2>Cabine Capa de Revista</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0006.jpg" alt="Cabine Capa de Revista 1">
+                <img src="IMG-20250319-WA0008.jpg" alt="Cabine Capa de Revista 2">
+            </div>
+            <p>O serviço de cabine capa de revista é uma experiência divertida que permite aos participantes posar como se fossem estrelas de capa de revista. Aqui estão alguns detalhes que podem ser destacados:
+
+                Ideal para Eventos: Perfeito para casamentos, festas de aniversário, eventos corporativos e muito mais, trazendo um toque de glamour e diversão para qualquer ocasião.
+                
+                Memórias Duradouras: Além de ser uma atividade divertida, as capas de revista criadas são uma forma única de guardar memórias especiais.
+                
+                Experiência Personalizada: Oferecemos uma variedade de fundos e temas para que cada cliente possa criar uma capa que reflita sua personalidade e estilo.</p>
+        </section>
+        
+        <section id="torre-seta-de-led">
+            <h2>Torre Seta de LED</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0014.jpg" alt="Torre Seta de LED 1">
+                <img src="IMG-20250319-WA0016.jpg" alt="Torre Seta de LED 2">
+            </div>
+            <p>Ilumine seu evento com nossa Torre Seta de LED! ✨ Transforme qualquer espaço em um cenário instagramável e inesquecível. Seja como fundo ou túnel de passagem, nossas luzes vão encantar seus convidados e criar momentos mágicos. Venha brilhar!</p>
+        </section>
+        
+        <section id="tunel-infinito">
+            <h2>Tunel Infinito</h2>
+            <div class="servico-imagens">
+                <img src="IMG-20250319-WA0051.jpg" alt="Tunel Infinito 1">
+                <img src="IMG-20250319-WA0046.jpg" alt="Tunel Infinito 2">
+            </div>
+            <p>Uma experiência hipnotizante e única!
+                Crie vídeos com uma incrível ilusão de ótica de profundidade. Uma interação imersiva e mágica.</p>
+        </section>
+        
+        <section id="adicionais">
+    <h2>Adicionais Exclusivos</h2>
+    <div class="adicionais-container">
+        <div class="adicional">
+            <img src="IMG-20250319-WA0017.jpg" alt="Pista de LED">
+            <h3>Pista de LED</h3>
+            <p>Transforme seu evento com nossa incrível pista de LED! Ela cria um ambiente dinâmico e interativo, perfeita para dar um toque futurista e vibrante às suas festas.</p>
+        </div>
+        <div class="adicional">
+            <img src="IMG-20250319-WA0029.jpg" alt="Barras de LED ao redor da Plataforma 360°">
+            <h3>Barras de LED ao redor da Plataforma 360°</h3>
+            <p>Adicione um toque de iluminação impressionante à sua Plataforma 360° com nossas barras de LED! Um espetáculo visual que vai encantar seus convidados e tornar a experiência ainda mais inesquecível.</p>
+        </div>
     </div>
-</div>
+</section>
     </main>
 
     <footer>
         <p>© 2025 Make It Happen Cabine Fotográfica - <a href="https://www.instagram.com/mihcabine" target="_blank">@mihcabine</a></p>
     </footer>
 
-    <script src="script.js"></script>
+    <script src="scripts.js"></script>
 </body>
 </html>
