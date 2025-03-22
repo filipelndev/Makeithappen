@@ -154,7 +154,7 @@ document.getElementById('contato-form').addEventListener('submit', function(even
     Observações:%20${encodeURIComponent(observacoes)}`;
 
     // Cria a URL para o WhatsApp, com o número de telefone e a mensagem codificada corretamente
-    const numeroWhatsApp = `https://wa.me/5561994622989?text=${mensagem}`;
+    const numeroWhatsApp = `https://api.whatsapp.com/send?phone=5561994622989?text=${mensagem}`;
 
     // Redireciona para o WhatsApp em uma nova aba
     window.open(numeroWhatsApp, '_blank');
