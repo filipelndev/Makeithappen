@@ -118,6 +118,7 @@ header {
     color: white;
     margin: 0; /* Remove margens extras */
     max-width: 100%; /* Mantém o texto dentro do limite */
+    text-align: center;
 }
 
 /* Seção de serviços */
@@ -180,6 +181,7 @@ header {
 .servico p {
     margin-top: 5px;
     font-size: 1.2rem;
+    text-align: center;
 }
 
 .servico:hover {
@@ -245,6 +247,7 @@ main > img {
     font-size: 1.6rem;
     color: white;
     margin: 0; /* Remove margens extras */
+    text-align: center;
 }
 /* Estilo da galeria */
 .galeria {
@@ -350,6 +353,7 @@ main > img {
     font-size: 1.2rem;
     line-height: 1.6;
     margin-bottom: 20px;
+    text-align: center;
 }
 
 /* Formulário de Contato */
@@ -412,7 +416,7 @@ main > img {
     }
 
     .carrossel-container {
-        margin: 100px 0 0 0;
+        margin: 20% 0 0 0; /* Centraliza na tela */
     }
 }
 
@@ -443,7 +447,7 @@ main > img {
         height: auto;
     }
     .carrossel-container {
-        margin: 100px 0 0 0;
+        margin: 30% 0 0 0; /* Centraliza na tela */
     }
 
         /* Ajuste para centralizar a logo */
@@ -538,6 +542,7 @@ section p {
     margin: 0 auto;
     line-height: 1.5;
     padding: 0 20px;
+    text-align: justify;
 }
 
 /* Estilos para a seção de adicionais */
@@ -603,6 +608,10 @@ section p {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%; /* Garantir que os itens se movam corretamente */
+}
+
+.carrossel p {
+    text-align: center;
 }
 
 .item {
