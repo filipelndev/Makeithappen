@@ -114,7 +114,7 @@ header {
 }
 
 .hero p {
-    padding-left: 40px;
+    padding-left: 20px;
     font-size: 2.8rem;
     color: white;
     margin: 0; /* Remove margens extras */
@@ -599,12 +599,13 @@ section p {
 }
 
 .carrossel {
+    width: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
 .item {
-    min-width: 100%;
+    width: 100%;
     text-align: center;
     opacity: 0.5;
     transition: opacity 0.5s;
