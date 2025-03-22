@@ -101,13 +101,13 @@ header {
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 6rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
 }
 
 .hero p {
-    font-size: 2.5rem;
+    font-size: 4rem;
     color: white;
     margin: 0; /* Remove margens extras */
 }
@@ -390,7 +390,6 @@ main > img {
 }
 
 /* ======= RESPONSIVIDADE ======= */
-/* Responsividade */
 @media (max-width: 1024px) {
     .hero-text h1 {
         font-size: 3rem;
@@ -402,6 +401,10 @@ main > img {
 
     .logo img {
         width: 180px;
+    }
+
+    .carrossel-container {
+        margin: 100px 0 0 0;
     }
 }
 
@@ -429,6 +432,31 @@ main > img {
 
     .logo img {
         width: 150px;
+        height: auto;
+    }
+    .carrossel-container {
+        margin: 100px 0 0 0;
+    }
+
+        /* Ajuste para centralizar a logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Faz a logo ocupar o espaço central */
+}
+
+    .sobre p {
+        font-size: 1rem;
+    }
+
+    .carrossel {
+        width: 80%;
+        margin: 120px 0 0 0;
+    }
+
+    #contato-form {
+        padding: 15px;
     }
 }
 
@@ -443,34 +471,6 @@ main > img {
 
     .logo img {
         width: 120px;
-    }
-}
-@media (max-width: 768px) {
-
-    /* Ajuste para centralizar a logo */
-.logo {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-grow: 1; /* Faz a logo ocupar o espaço central */
-}
-
-.logo img {
-    max-width: 150px; /* Ajuste conforme necessário */
-    height: auto;
-}
-
-    .sobre p {
-        font-size: 1rem;
-    }
-
-    .carrossel {
-        width: 80%;
-        margin: 120px 0 0 0;
-    }
-
-    #contato-form {
-        padding: 15px;
     }
 }
 
@@ -582,7 +582,7 @@ section p {
 .carrossel-container {
     position: relative;
     width: 100%;
-    margin: 300px 0 0 0;
+    margin: 500px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: center;
