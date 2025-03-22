@@ -82,16 +82,14 @@ header {
     justify-content: space-between;
     text-align: center;
     height: 10vh;
-    padding-left: 15px;
-    padding-bottom: 200px;
 }
 
 .hero-content {
     display: flex;
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Deixa o texto à esquerda e a logo à direita */
-    text-align: left;
-    padding: 20px;
+    text-align: center;
+    padding: 10px;
     gap: 20px;
 }
 
@@ -103,15 +101,13 @@ header {
 }
 
 .hero h1 {
-    font-size: 4rem;
+    font-size: 3rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
-    
 }
 
 .hero p {
-    padding-top: 200px;
-    font-size: 3rem;
+    font-size: 2.5rem;
     color: white;
     margin: 0; /* Remove margens extras */
 }
@@ -586,7 +582,7 @@ section p {
 .carrossel-container {
     position: relative;
     width: 100%;
-    margin: 550px 0 0 0;
+    margin: 300px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: center;
