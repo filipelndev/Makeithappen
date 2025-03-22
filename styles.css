@@ -133,13 +133,15 @@ header {
     color: white;
 }
 
-.servicos-container {
+.servico-container {
     display: flex;
-    overflow-x:auto;
-    gap: 20px;
-    padding: 20px;
+    align-items: center; /* Alinha verticalmente os itens */
+    justify-content: space-between; /* Espaça as imagens e o texto */
+    gap: 30px; /* Espaçamento entre as imagens e o texto */
+    padding: 30px 0;
+    border-bottom: 2px solid #FF6F00; /* Adiciona a separação com a cor desejada */
+    background-color: black; /* Cor de fundo para a section, se necessário */
 }
-
 
 .servico {
     background: #111;
@@ -148,14 +150,31 @@ header {
     margin-top: 15px;
 }
 
-.servico img {
+.servico-imagens {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+
+.servico-imagens img {
     width: 100%;
-    border-radius: 8px;
-    transition: transform 0.3s ease;
+    max-width: 500px; /* Limita o tamanho da imagem para não ficar muito grande */
+    height: auto;
 }
 
 .servico img:hover {
     transform: scale(1.05);
+}
+
+.servico-texto {
+    flex: 2;
+    max-width: 600px;
+}
+
+.servico-texto p {
+    margin-bottom: 10px; /* Espaço entre os parágrafos */
+    text-align: justify; /* Justifica o texto */
 }
 
 .btn-saber-mais {
@@ -511,20 +530,6 @@ a.servico-link:hover {
 section {
     text-align: center;
     margin: 40px 0 0 0;
-}
-
-/* Estilo para as imagens dos serviços */
-.servico-imagens {
-    display: flex;
-    justify-content: center;
-    gap: 20px; /* Espaçamento entre as imagens */
-    margin-bottom: 20px;
-}
-
-.servico-imagens img {
-    max-width: 15%; /* Limita a largura das imagens */
-    border-radius: 8px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adiciona sombra para um visual mais interessante */
 }
 
 /* Estilo para os títulos */

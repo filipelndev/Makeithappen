@@ -135,27 +135,45 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-document.getElementById('contato-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário (não recarregar a página)
+// Função para capturar os parâmetros da URL
+function obterParametrosURL() {
+    const parametros = new URLSearchParams(window.location.search);
 
-    // Captura os valores do formulário
-    const nome = document.getElementById('nome').value;
-    const data = document.getElementById('data').value;
-    const local = document.getElementById('local').value;
-    const convidados = document.getElementById('convidados').value;
-    const observacoes = document.getElementById('observacoes').value;
+    return {
+        nome: parametros.get('nome') || '',
+        data: parametros.get('data') || '',
+        local: parametros.get('local') || '',
+        convidados: parametros.get('convidados') || '',
+        observacoes: parametros.get('observacoes') || ''
+    };
+}
 
-    // Monta a mensagem com os dados do formulário no formato adequado
-    const mensagem = `Tenho%20interesse%20em%20fazer%20um%20evento.%20Aqui%20estão%20os%20detalhes:%0A%0A
-    Nome:%20${encodeURIComponent(nome)}%0A
-    Data%20do%20Evento:%20${encodeURIComponent(data)}%0A
-    Local%20do%20Evento:%20${encodeURIComponent(local)}%0A
-    Quantidade%20de%20Convidados:%20${encodeURIComponent(convidados)}%0A
-    Observações:%20${encodeURIComponent(observacoes)}`;
+// Exibir os dados na página
+document.addEventListener("DOMContentLoaded", function () {
+    const dados = obterParametrosURL();
 
-    // Cria a URL para o WhatsApp, com o número de telefone e a mensagem codificada corretamente
-    const numeroWhatsApp = `https://api.whatsapp.com/send?phone=5561994622989?text=${mensagem}`;
-
-    // Redireciona para o WhatsApp em uma nova aba
-    window.open(numeroWhatsApp, '_blank');
+    // Atualizar os campos ou criar um resumo na página
+    document.getElementById('resumo-nome').textContent = dados.nome;
+    document.getElementById('resumo-data').textContent = dados.data;
+    document.getElementById('resumo-local').textContent = dados.local;
+    document.getElementById('resumo-convidados').textContent = dados.convidados;
+    document.getElementById('resumo-observacoes').textContent = dados.observacoes;
 });
+
+document.getElementById('contato-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Captura os valores do formulário e codifica para a URL
+    const nome = encodeURIComponent(document.getElementById('nome').value);
+    const data = encodeURIComponent(document.getElementById('data').value);
+    const local = encodeURIComponent(document.getElementById('local').value);
+    const convidados = encodeURIComponent(document.getElementById('convidados').value);
+    const observacoes = encodeURIComponent(document.getElementById('observacoes').value);
+
+    // Monta a URL correta com os parâmetros
+    const novaURL = `sobre.html?nome=${nome}&data=${data}&local=${local}&convidados=${convidados}&observacoes=${observacoes}`;
+
+    // Redireciona para a nova URL
+    window.location.assign(novaURL);
+});
+
