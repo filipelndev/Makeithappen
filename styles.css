@@ -604,6 +604,7 @@ section p {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%; /* Garantir que os itens se movam corretamente */
+    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 }
 
 .carrossel p {
