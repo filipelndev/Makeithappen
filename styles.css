@@ -588,10 +588,9 @@ section p {
     line-height: 1.5;
 }
 .carrossel-container {
-    margin-top: 10%;
     width: 100%; /* Ajusta para ocupar mais espaço na tela */
     height: 300px; /* Define uma altura maior */
-    margin: 200px 0 0 0; /* Centraliza na tela */
+    margin: 30% 0 0 0; /* Centraliza na tela */
 }
 
 .carousel-container img {
