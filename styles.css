@@ -589,39 +589,28 @@ section p {
     line-height: 1.5;
 }
 .carrossel-container {
-    position: relative;
-    width: 100%;
-    margin: 0 auto;
-    overflow: hidden;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    max-width: 1200px; /* Limita o tamanho máximo para evitar exageros */
-    height: 800px;
+    width: 100%; /* Ajusta para ocupar mais espaço na tela */
+    height: 200px; /* Define uma altura maior */
+    margin: 200px 0 0 0; /* Centraliza na tela */
 }
 
 .carousel-container img {
-    width: 100%;
-    height: 100%;
     object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
 }
 
 .carrossel {
-    width: 100%;
     display: flex;
     transition: transform 0.5s ease-in-out;
 }
 
 .item {
-    width: 100%;
     text-align: center;
     opacity: 0.5;
     transition: opacity 0.5s;
 }
 
 .item img {
-    width: 100%;
-    max-width: 400px;
+    max-width: 505px;
     border-radius: 10px;
 }
 
@@ -642,13 +631,17 @@ button {
 .anterior {
     left: 10px;
     position: absolute;
-    top: 50%;
+    top: 88%;
     transform: translateY(-50%);
 }
 
 .proximo {
     position: absolute;
-    top: 50%;
+    top: 88%;
     transform: translateY(-50%);
     right: 10px;
+}
+
+.space{
+    margin-top: 550px;
 }
