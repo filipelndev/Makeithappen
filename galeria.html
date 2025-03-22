@@ -17,17 +17,33 @@
         </nav>
     </header> 
     <main>
-    <h1>Galeria de Fotos</h1>
-    <div class="galeria">
-        <img src="IMG-20250319-WA0053.jpg" alt="Foto 1" width="240" height="160">
-        <img src="IMG-20250319-WA0052.jpg" alt="Foto 2" width="240" height="160">
-        <img src="IMG-20250319-WA0051.jpg" alt="Foto 3" width="240" height="160">
-        <img src="IMG-20250319-WA0046.jpg" alt="Foto 4" width="240" height="160">
-        <img src="IMG-20250319-WA0044.jpg" alt="Foto 5" width="240" height="160">
-        <!-- Adicione mais imagens conforme necessário -->
-    </div>
-</main>
+        <section class="galery">
+            <div class="galery-content">
+                <div class="galery-text">
+                    <h1>Galeria de fotos</h1>
+                </div>
+                <div class="logo">
+                    <a href="https://www.instagram.com/mihcabine" target="_blank">
+                        <img class="logotipo" src="IMG-20250320-WA0000.jpg" alt="Make It Happen Logo">
+                    </a>
+                </div>
+            </div>
+        </section>
+        <div class="galeria">
+            <img src="IMG-20250319-WA0053.jpg" alt="Foto 1" class="foto">
+            <img src="IMG-20250319-WA0052.jpg" alt="Foto 2" class="foto">
+            <img src="IMG-20250319-WA0051.jpg" alt="Foto 3" class="foto">
+            <img src="IMG-20250319-WA0046.jpg" alt="Foto 4" class="foto">
+            <img src="IMG-20250319-WA0044.jpg" alt="Foto 5" class="foto">
+            <!-- Adicione mais imagens conforme necessário -->
+        </div>
+    </main>
 
+    <!-- Modal -->
+    <div id="modal" class="modal">
+        <span id="fecharModal" class="fechar">&times;</span>
+        <img id="fotoAmpliada" src="" alt="foto Ampliada">
+    </div>
 
     <footer>
         <p>© 2025 Make It Happen Cabine Fotográfica - <a href="https://www.instagram.com/mihcabine" target="_blank">@mihcabine</a></p>

@@ -26,12 +26,6 @@ nav {
 
 /* Ajuste para todas as seções ficarem abaixo da navbar */
 
-/* Caso alguma seção específica precise de mais espaçamento */
-.galeria, .sobre {
-    margin-top: 100px;
-}
-
-
 /* Barra de navegação */
 header {
     background-color: rgba(0, 0, 0, 0.9);
@@ -54,7 +48,7 @@ header {
 }
 
 .logo img {
-    max-width: 150px; /* Ajuste conforme necessário */
+    max-width: 300px; /* Ajuste conforme necessário */
     height: auto;
 }
 
@@ -90,7 +84,7 @@ header {
     margin-top: 60px;
     height: 15vh;
     padding-left: 15px;
-    padding-bottom: 250px;
+    padding-bottom: 280px;
 }
 
 .hero-content {
@@ -118,7 +112,6 @@ header {
 }
 
 /* Seção de serviços */
-
 
 .servicos {
     text-align: center;
@@ -211,12 +204,50 @@ main > img {
 }
 
 /* ======= GALERIA ======= */
+/* Foto em destaque */
+
+.galery {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: left;
+    margin-top: 60px;
+    height: 15vh;
+    padding-left: 15px;
+    padding-bottom: 160px;
+}
+
+.galery-content {
+    display: flex;
+    align-items: center; /* Garante alinhamento vertical entre texto e logo */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.galery-text {
+    max-width: 100%; /* Limita o tamanho do texto */
+}
+
+.galery h1 {
+    font-size: 4rem;
+    margin: 0; /* Remove margens extras */
+    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
+}
+
+.galery p {
+    font-size: 2.5rem;
+    color: #ff6600;
+    margin: 0; /* Remove margens extras */
+    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
+}
+/* Estilo da galeria */
 .galeria {
     display: flex;
     flex-wrap: wrap;
     gap: 10px;
     justify-content: center;
-    padding: 20px;
+    padding: 70px;
 }
 
 .galeria img {
@@ -230,14 +261,13 @@ main > img {
 }
 
 .galeria img:hover {
-    transform: scale(1.5);
+    transform: scale(1.05);
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.5);
 }
 
-
 /* Estilo do modal */
 .modal {
-    display: none; /* Oculto por padrão */
+    display: none; /* Modal oculto por padrão */
     position: fixed;
     z-index: 1000;
     left: 0;
@@ -245,25 +275,14 @@ main > img {
     width: 100%;
     height: 100%;
     background-color: rgba(0, 0, 0, 0.8);
-    display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.modal-content {
-    background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+.modal img {
     max-width: 90%;
-    width: 400px;
-    text-align: center;
-    position: relative;
-}
-
-.modal-content img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
+    max-height: 90%;
+    object-fit: contain;
     border-radius: 8px;
 }
 
@@ -271,21 +290,49 @@ main > img {
     position: absolute;
     top: 10px;
     right: 15px;
-    font-size: 25px;
+    font-size: 30px;
     cursor: pointer;
-    color: black;
+    color: white;
 }
 
 /* ======= SOBRE ======= */
+
+.about {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding-left: 15px;
+}
+
+.about-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.about-text {
+    max-width: 500px;
+}
+
+.about h1 {
+    font-size: 3rem;
+    margin: 0;
+    padding: 5px 0;
+    color: #ff6600;
+}
+
 .sobre {
     max-width: 800px;
-    margin: 100px auto 40px;
-    padding-top: 50px;
+    margin: 10px 0 0 0;
     text-align: center;
 }
 
-.Sobre h2{
-    margin-bottom: 10px;
+.sobre h2 {
+    margin-bottom: 20px;
+    font-size: 2rem;
 }
 
 .sobre h1 {
@@ -309,6 +356,7 @@ main > img {
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.5);
+    margin-top: 30px;
 }
 
 #contato-form label {
@@ -346,52 +394,32 @@ main > img {
 
 /* ======= RESPONSIVIDADE ======= */
 @media (max-width: 768px) {
-    .galeria h1, .sobre h1 {
-        font-size: 2rem;
-    }
+
+    /* Ajuste para centralizar a logo */
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Faz a logo ocupar o espaço central */
+}
+
+.logo img {
+    max-width: 150px; /* Ajuste conforme necessário */
+    height: auto;
+}
 
     .sobre p {
         font-size: 1rem;
     }
 
     .carrossel {
-        width: 95%;
+        width: 80%;
+        margin: 120px 0 0 0;
     }
 
     #contato-form {
         padding: 15px;
     }
-}
-/* Estilização do modal */
-dialog {
-    border: none;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
-    text-align: center;
-    max-width: 90%;
-    width: 400px;
-    background-color: #fff;
-}
-
-dialog::backdrop {
-    background: rgba(0, 0, 0, 0.8);
-}
-
-.modal-content img {
-    width: 100%;
-    max-height: 300px;
-    object-fit: cover;
-    border-radius: 8px;
-}
-
-.fechar {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    font-size: 25px;
-    cursor: pointer;
-    color: #000;
 }
 
 /* Removendo o sublinhado e a cor padrão dos links */
@@ -418,7 +446,7 @@ a.servico-link:hover {
 /* Estilos para a seção de serviços */
 section {
     text-align: center;
-    margin: 40px 0;
+    margin: 40px 0 0 0;
 }
 
 /* Estilo para as imagens dos serviços */
@@ -501,8 +529,8 @@ section p {
 }
 .carrossel-container {
     position: relative;
-    width: 80%;
-    margin: auto;
+    width: 100%;
+    margin: 50px 0 0 0;
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -532,9 +560,7 @@ section p {
 }
 
 button {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
+    position: relative;
     background: rgba(0, 0, 0, 0.5);
     color: white;
     border: none;
@@ -545,8 +571,14 @@ button {
 
 .anterior {
     left: 10px;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
 }
 
 .proximo {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
     right: 10px;
 }

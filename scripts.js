@@ -35,17 +35,32 @@ document.addEventListener("DOMContentLoaded", function () {
     window.addEventListener('scroll', revelarElementos);
     revelarElementos();
 
-    // Exemplo de um carrossel simples na galeria
-    let indiceAtual = 0;
-    const imagens = document.querySelectorAll('.galeria img');
+   // Selecionando as imagens e o modal
+const imagens = document.querySelectorAll('.foto'); // Seleciona todas as imagens com a classe 'foto'
+const modal = document.getElementById('modal'); // Seleciona o modal
+const fotoAmpliada = document.getElementById('fotoAmpliada'); // Seleciona a imagem ampliada no modal
+const fecharModal = document.getElementById('fecharModal'); // Seleciona o botão de fechar
 
-    function trocarImagem() {
-        if (imagens.length > 0) {
-            imagens.forEach(img => img.style.display = 'none');
-            imagens[indiceAtual].style.display = 'block';
-            indiceAtual = (indiceAtual + 1) % imagens.length;
-        }
+// Adicionando evento de clique nas imagens
+imagens.forEach(imagem => {
+    imagem.addEventListener('click', () => {
+        // Define a imagem ampliada com o 'src' da imagem clicada
+        fotoAmpliada.src = imagem.src;
+        modal.style.display = 'flex'; // Exibe o modal
+    });
+});
+
+// Fechar o modal ao clicar no "X" ou fora da imagem ampliada
+fecharModal.addEventListener('click', () => {
+    modal.style.display = 'none'; // Fecha o modal
+});
+
+// Fechar o modal se clicar fora da imagem ampliada
+modal.addEventListener('click', (e) => {
+    if (e.target === modal) { // Se o clique for fora da imagem
+        modal.style.display = 'none'; // Fecha o modal
     }
+});
 
     if (imagens.length > 0) {
         setInterval(trocarImagem, 3000);
@@ -107,3 +122,40 @@ function mudarSlide(direcao) {
 setInterval(() => {
     mudarSlide(1);
 }, 5000);
+
+document.addEventListener("DOMContentLoaded", function () {
+    // Código para selecionar a foto na galeria e destacá-la acima
+    const galeriaImgs = document.querySelectorAll('.galeria img');
+    const fotoSelecionada = document.getElementById('fotoSelecionada');
+
+    galeriaImgs.forEach(img => {
+        img.addEventListener('click', () => {
+            fotoSelecionada.src = img.src;  // Atualiza a imagem destacada
+        });
+    });
+});
+
+document.getElementById('contato-form').addEventListener('submit', function(event) {
+    event.preventDefault(); // Impede o envio padrão do formulário
+
+    // Captura os valores do formulário
+    const nome = document.getElementById('nome').value;
+    const data = document.getElementById('data').value;
+    const local = document.getElementById('local').value;
+    const convidados = document.getElementById('convidados').value;
+    const observacoes = document.getElementById('observacoes').value;
+
+    // Monta a mensagem com os dados do formulário no formato adequado
+    const mensagem = `Tenho%20interesse%20em%20fazer%20um%20evento.%20Aqui%20estão%20os%20detalhes:%0A%0A
+    Nome:%20${encodeURIComponent(nome)}%0A
+    Data%20do%20Evento:%20${encodeURIComponent(data)}%0A
+    Local%20do%20Evento:%20${encodeURIComponent(local)}%0A
+    Quantidade%20de%20Convidados:%20${encodeURIComponent(convidados)}%0A
+    Observações:%20${encodeURIComponent(observacoes)}`;
+
+    // Cria a URL para o WhatsApp, com o número de telefone e a mensagem codificada corretamente
+    const numeroWhatsApp = `https://wa.me/5561994622989?text=${mensagem}`;
+
+    // Redireciona para o WhatsApp
+    window.open(numeroWhatsApp, '_blank');
+});
