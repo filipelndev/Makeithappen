@@ -80,11 +80,10 @@ header {
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    text-align: left;
-    margin-top: 60px;
-    height: 15vh;
+    text-align: center;
+    height: 10vh;
     padding-left: 15px;
-    padding-bottom: 280px;
+    padding-bottom: 200px;
 }
 
 .hero-content {
@@ -95,21 +94,19 @@ header {
 }
 
 .hero-text {
-    max-width: 80%; /* Limita o tamanho do texto */
+    max-width: 100%; /* Limita o tamanho do texto */
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0; /* Remove margens extras */
-    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
     color: #ff6600;
 }
 
 .hero p {
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     color: white;
     margin: 0; /* Remove margens extras */
-    padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
 }
 
 /* Seção de serviços */
@@ -228,13 +225,13 @@ main > img {
 }
 
 .galery h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
 }
 
 .galery p {
-    font-size: 2rem;
+    font-size: 1.6rem;
     color: white;
     margin: 0; /* Remove margens extras */
 }
@@ -312,11 +309,11 @@ main > img {
 
 .about-text {
     max-width: 80%;
-    font-size: 2rem;
+    font-size: 1.6rem;
 }
 
 .about h1 {
-    font-size: 3rem;
+    font-size: 2.6rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
 }
