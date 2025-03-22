@@ -136,7 +136,7 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 document.getElementById('contato-form').addEventListener('submit', function(event) {
-    event.preventDefault(); // Impede o envio padrão do formulário
+    event.preventDefault(); // Impede o envio padrão do formulário (não recarregar a página)
 
     // Captura os valores do formulário
     const nome = document.getElementById('nome').value;
@@ -156,6 +156,6 @@ document.getElementById('contato-form').addEventListener('submit', function(even
     // Cria a URL para o WhatsApp, com o número de telefone e a mensagem codificada corretamente
     const numeroWhatsApp = `https://wa.me/5561994622989?text=${mensagem}`;
 
-    // Redireciona para o WhatsApp
+    // Redireciona para o WhatsApp em uma nova aba
     window.open(numeroWhatsApp, '_blank');
 });
