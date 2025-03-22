@@ -98,14 +98,14 @@ header {
 }
 
 .hero h1 {
-    font-size: 2.6rem;
+    font-size: 4rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
     
 }
 
 .hero p {
-    font-size: 1.6rem;
+    font-size: 3rem;
     color: white;
     margin: 0; /* Remove margens extras */
 }
@@ -391,11 +391,11 @@ main > img {
 /* Responsividade */
 @media (max-width: 1024px) {
     .hero-text h1 {
-        font-size: 4rem;
+        font-size: 3rem;
     }
 
     .hero-text p {
-        font-size: 2.5rem;
+        font-size: 2rem;
     }
 
     .logo img {
