@@ -596,6 +596,14 @@ section p {
     display: flex;
     align-items: center;
     justify-content: center;
+    max-width: 1200px; /* Limita o tamanho máximo para evitar exageros */
+    height: 500px;
+}
+
+.carousel-container img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
 }
 
 .carrossel {
