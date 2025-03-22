@@ -567,9 +567,12 @@ section p {
 }
 
 .adicional img {
-    width: 50%;
+    max-width: 50%; /* Limita o tamanho da imagem a 50% da largura do contêiner */
+    margin: 0 auto; /* Centraliza a imagem horizontalmente */
+    display: block; /* Garante que a imagem seja tratada como um bloco */
     border-radius: 10px;
 }
+
 
 .adicional h3 {
     font-size: 1.5rem;
