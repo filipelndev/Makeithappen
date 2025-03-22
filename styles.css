@@ -82,6 +82,7 @@ header {
     justify-content: space-between;
     text-align: center;
     height: 10vh;
+    width: 100%;
 }
 
 .hero-content {
@@ -89,6 +90,7 @@ header {
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Deixa o texto à esquerda e a logo à direita */
     text-align: center;
+    width: 100%;
     padding: 10px;
     gap: 20px;
 }
@@ -98,18 +100,25 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza verticalmente dentro da coluna */
+    width: 100%;
+    
 }
 
 .hero h1 {
     font-size: 6rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
+    white-space: nowrap; /* Impede quebra de linha */
+    overflow: hidden; /* Evita que o texto ultrapasse o contêiner */
+    max-width: 100%; /* Mantém o texto dentro do limite */
 }
 
 .hero p {
-    font-size: 4rem;
+    padding-left: 40px;
+    font-size: 2.8rem;
     color: white;
     margin: 0; /* Remove margens extras */
+    max-width: 100%; /* Mantém o texto dentro do limite */
 }
 
 /* Seção de serviços */
