@@ -41,14 +41,14 @@ header {
 
 /* Ajuste para centralizar a logo */
 .logo {
+    flex: 1; /* Ocupa o espaço da direita */
     display: flex;
     justify-content: center;
     align-items: center;
-    flex-grow: 1; /* Faz a logo ocupar o espaço central */
 }
 
 .logo img {
-    max-width: 800px; /* Ajuste conforme necessário */
+    max-width: 600px; /* Ajuste conforme necessário */
     height: auto;
 }
 
@@ -88,13 +88,18 @@ header {
 
 .hero-content {
     display: flex;
-    align-items: center; /* Garante alinhamento vertical entre texto e logo */
-    width: 100%;
-    justify-content: space-between;
+    align-items: center; /* Centraliza verticalmente */
+    justify-content: space-between; /* Deixa o texto à esquerda e a logo à direita */
+    text-align: left;
+    padding: 20px;
+    gap: 20px;
 }
 
 .hero-text {
-    max-width: 100%; /* Limita o tamanho do texto */
+    flex: 1; /* Ocupa o espaço da esquerda */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza verticalmente dentro da coluna */
 }
 
 .hero h1 {
@@ -105,6 +110,7 @@ header {
 }
 
 .hero p {
+    padding-top: 200px;
     font-size: 3rem;
     color: white;
     margin: 0; /* Remove margens extras */
@@ -407,6 +413,10 @@ main > img {
     .hero-content {
         flex-direction: column;
         text-align: center;
+    }
+    .hero-text, .logo {
+        flex: none;
+        width: 100%;
     }
 
     .hero-text {
