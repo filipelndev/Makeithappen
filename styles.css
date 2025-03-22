@@ -90,7 +90,6 @@ header {
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Deixa o texto à esquerda e a logo à direita */
     text-align: center;
-    width: 100%;
     gap: 20px;
 }
 
@@ -594,7 +593,6 @@ section p {
 
 .carousel-container img {
     width: 100%;
-    overflow: hidden;
     position: relative;
 }
 
@@ -602,7 +600,6 @@ section p {
     display: flex;
     transition: transform 0.5s ease-in-out;
     width: 100%; /* Garantir que os itens se movam corretamente */
-    overflow-x: hidden; /* Oculta a barra de rolagem horizontal */
 }
 
 .carrossel p {
