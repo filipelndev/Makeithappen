@@ -4,15 +4,14 @@ document.addEventListener("DOMContentLoaded", function () {
     // Ativar o efeito de rolagem suave nos links do menu
     document.querySelectorAll('.nav-links a').forEach(link => {
         link.addEventListener('click', function (e) {
-            e.preventDefault();
-            const targetId = this.getAttribute('href').substring(0);
-            const targetElement = document.querySelector(targetId);
-            
-            if (targetElement) {
-                window.scrollTo({
-                    top: targetElement.offsetTop - 80,
-                    behavior: 'smooth'
-                });
+            if (this.getAttribute('href').startsWith("#")) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                const targetElement = document.querySelector(targetId);
+    
+                if (targetElement) {
+                    targetElement.scrollIntoView({ behavior: "smooth" });
+                }
             }
         });
     });
@@ -79,4 +78,32 @@ document.addEventListener("DOMContentLoaded", function () {
             servicosContainer.scrollLeft = scrollLeft - walk;
         });
     });
+
 });
+const carrossel = document.querySelector('.carrossel');
+const items = document.querySelectorAll('.item');
+const totalItems = items.length;
+let index = 0;
+
+document.querySelector('.proximo').addEventListener('click', () => {
+    mudarSlide(1);
+});
+
+document.querySelector('.anterior').addEventListener('click', () => {
+    mudarSlide(-1);
+});
+
+function mudarSlide(direcao) {
+    items[index].classList.remove('ativo');
+    index = (index + direcao + totalItems) % totalItems;
+    items[index].classList.add('ativo');
+
+    // Move o carrossel visualmente
+    const deslocamento = -index * 100;
+    carrossel.style.transform = `translateX(${deslocamento}%)`;
+}
+
+// Alternar automaticamente a cada 5 segundos
+setInterval(() => {
+    mudarSlide(1);
+}, 5000);

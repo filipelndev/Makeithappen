@@ -54,8 +54,8 @@ header {
 }
 
 .logo img {
-    height: 150px; /* Ajuste o tamanho conforme necessário */
-    width: auto;
+    max-width: 150px; /* Ajuste conforme necessário */
+    height: auto;
 }
 
 
@@ -82,14 +82,26 @@ header {
 
 /* Hero Section */
 .hero {
-    display: flex
-;
+    display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: normal;
-    text-align: center;
+    justify-content: space-between;
+    text-align: left;
     margin-top: 60px;
     height: 15vh;
+    padding-left: 15px;
+    padding-bottom: 150px;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center; /* Garante alinhamento vertical entre texto e logo */
+    width: 100%;
+    justify-content: space-between;
+}
+
+.hero-text {
+    max-width: 80%; /* Limita o tamanho do texto */
 }
 
 .hero h1 {
@@ -198,25 +210,6 @@ main > img {
     box-shadow: 0 0 15px rgba(255, 102, 0, 0.5); /* Efeito de brilho suave */
 }
 
-/* Ajuste para a seção de serviços */
-.servicos-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    gap: 20px;
-}
-
-.servico img {
-    width: 200px; /* Tamanho fixo para manter padronização */
-    height: auto;
-    border-radius: 10px;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.servico img:hover {
-    transform: scale(1.05);
-    box-shadow: 0 0 15px rgba(255, 102, 0, 0.7);
-}
 /* ======= GALERIA ======= */
 .galeria {
     display: flex;
@@ -505,4 +498,55 @@ section p {
     font-size: 1.1em;
     color: white;
     line-height: 1.5;
+}
+.carrossel-container {
+    position: relative;
+    width: 80%;
+    margin: auto;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carrossel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+}
+
+.item {
+    min-width: 100%;
+    text-align: center;
+    opacity: 0.5;
+    transition: opacity 0.5s;
+}
+
+.item img {
+    width: 100%;
+    max-width: 400px;
+    border-radius: 10px;
+}
+
+.item.ativo {
+    opacity: 1;
+}
+
+button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 24px;
+}
+
+.anterior {
+    left: 10px;
+}
+
+.proximo {
+    right: 10px;
 }
