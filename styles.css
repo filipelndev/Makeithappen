@@ -90,8 +90,7 @@ header {
     align-items: center; /* Centraliza verticalmente */
     justify-content: space-between; /* Deixa o texto à esquerda e a logo à direita */
     text-align: center;
-    width: 90%;
-    padding: 10px;
+    width: 100%;
     gap: 20px;
 }
 
@@ -100,20 +99,19 @@ header {
     display: flex;
     flex-direction: column;
     justify-content: center; /* Centraliza verticalmente dentro da coluna */
-    width: 90%;
+    width: 100%;
 }
 
 .hero h1 {
-    font-size: 5rem;
+    font-size: 4rem;
     margin: 0; /* Remove margens extras */
     color: #ff6600;
     white-space: nowrap; /* Impede quebra de linha */
-    max-width: 90%; /* Mantém o texto dentro do limite */
+    max-width: 100%; /* Mantém o texto dentro do limite */
 }
 
 .hero p {
-    padding-left: 20px;
-    font-size: 2.8rem;
+    font-size: 2rem;
     color: white;
     margin: 0; /* Remove margens extras */
     max-width: 100%; /* Mantém o texto dentro do limite */
@@ -138,7 +136,7 @@ header {
 
 .servicos-container {
     display: flex;
-    overflow-x: auto;
+    overflow-x:auto;
     gap: 20px;
     padding: 20px;
 }
