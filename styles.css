@@ -90,7 +90,7 @@ header {
     margin-top: 60px;
     height: 15vh;
     padding-left: 15px;
-    padding-bottom: 150px;
+    padding-bottom: 250px;
 }
 
 .hero-content {
@@ -101,17 +101,17 @@ header {
 }
 
 .hero-text {
-    max-width: 80%; /* Limita o tamanho do texto */
+    max-width: 100%; /* Limita o tamanho do texto */
 }
 
 .hero h1 {
-    font-size: 3rem;
+    font-size: 4rem;
     margin: 0; /* Remove margens extras */
     padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
 }
 
 .hero p {
-    font-size: 1.5rem;
+    font-size: 2.5rem;
     color: #ff6600;
     margin: 0; /* Remove margens extras */
     padding: 5px 0; /* Pequeno espaçamento para não ficarem colados */
