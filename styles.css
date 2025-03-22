@@ -591,7 +591,7 @@ section p {
 .carrossel-container {
     position: relative;
     width: 100%;
-    margin: 500px 0 0 0;
+    margin: 0 auto;
     overflow: hidden;
     display: flex;
     align-items: center;
