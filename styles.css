@@ -590,12 +590,14 @@ section p {
 }
 .carrossel-container {
     width: 100%; /* Ajusta para ocupar mais espaço na tela */
-    height: 200px; /* Define uma altura maior */
+    height: 300px; /* Define uma altura maior */
     margin: 200px 0 0 0; /* Centraliza na tela */
 }
 
 .carousel-container img {
     object-fit: cover; /* Garante que a imagem se ajuste sem distorcer */
+    flex-shrink: 0; /* Garante que todas as imagens tenham o mesmo tamanho */
+    width: 100%;
 }
 
 .carrossel {
