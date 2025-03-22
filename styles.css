@@ -109,7 +109,6 @@ header {
     margin: 0; /* Remove margens extras */
     color: #ff6600;
     white-space: nowrap; /* Impede quebra de linha */
-    overflow: hidden; /* Evita que o texto ultrapasse o contêiner */
     max-width: 90%; /* Mantém o texto dentro do limite */
 }
 
@@ -589,6 +588,7 @@ section p {
     line-height: 1.5;
 }
 .carrossel-container {
+    margin-top: 10%;
     width: 100%; /* Ajusta para ocupar mais espaço na tela */
     height: 300px; /* Define uma altura maior */
     margin: 200px 0 0 0; /* Centraliza na tela */
@@ -635,13 +635,13 @@ button {
 .anterior {
     left: 10px;
     position: absolute;
-    top: 88%;
+    top: 100%;
     transform: translateY(-50%);
 }
 
 .proximo {
     position: absolute;
-    top: 88%;
+    top: 100%;
     transform: translateY(-50%);
     right: 10px;
 }
