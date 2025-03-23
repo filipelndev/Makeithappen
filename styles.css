@@ -155,6 +155,7 @@ header {
     flex: 1;
     display: flex;
     justify-content: center;
+    align-items: center;
     gap: 10px;
 }
 
@@ -171,6 +172,8 @@ header {
 .servico-texto {
     flex: 2;
     max-width: 600px;
+    justify-content: center; /* Alinha verticalmente o texto */
+    align-items: center;
 }
 
 .servico-texto p {
