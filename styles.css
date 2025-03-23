@@ -158,7 +158,7 @@ header {
 }
 
 .servico-imagens img {
-    width: 100%;
+    width: 150%;
     max-width: 500px; /* Limita o tamanho da imagem para não ficar muito grande */
     height: auto;
 }
@@ -175,6 +175,7 @@ header {
 .servico-texto p {
     margin-bottom: 10px; /* Espaço entre os parágrafos */
     text-align: justify; /* Justifica o texto */
+    font-size: 2rem;
 }
 
 .btn-saber-mais {
@@ -546,7 +547,6 @@ section p {
     max-width: 800px;
     margin: 0 auto;
     line-height: 1.5;
-    padding: 0 20px;
     text-align: justify;
 }
 
