@@ -161,7 +161,7 @@ header {
 }
 
 .servico-imagens img {
-    width: 150%;
+    width: 550px;
     max-width: 700px; /* Limita o tamanho da imagem para não ficar muito grande */
     height: auto;
 }
@@ -177,6 +177,9 @@ header {
     align-items: center;
 }
 
+.servico-texto h3{
+    color: #FF6F00;
+}
 .servico-texto p {
     margin-bottom: 10px; /* Espaço entre os parágrafos */
     text-align: center; /* Justifica o texto */
@@ -592,7 +595,6 @@ section p {
     font-size: 1.5rem;
     color: black;
     text-align: center; /* Garante que o texto fique centralizado */
-    font-weight: bold;
 }
 /*carrossel*/
 .carrossel-container {
