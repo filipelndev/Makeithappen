@@ -171,15 +171,15 @@ header {
 
 .servico-texto {
     flex: 2;
-    max-width: 600px;
+    max-width: 1000px;
     justify-content: center; /* Alinha verticalmente o texto */
     align-items: center;
 }
 
 .servico-texto p {
     margin-bottom: 10px; /* Espaço entre os parágrafos */
-    text-align: justify; /* Justifica o texto */
-    font-size: 1.5rem;
+    text-align: center; /* Justifica o texto */
+    font-size: 1.2rem;
 }
 
 .btn-saber-mais {
